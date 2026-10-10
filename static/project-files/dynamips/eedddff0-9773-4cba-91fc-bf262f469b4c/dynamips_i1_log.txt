@@ -1,0 +1,43 @@
+Oct 09 22:32:48.189 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 09 22:32:48.190 HYPERVISOR: Started on IP = localhost, TCP port = 53015.
+Oct 09 22:32:48.486 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 09 22:32:48.488 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Home\Desktop\School21\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips 
+Oct 09 22:32:48.493 GENERAL: working_dir=C:\Users\Home\Desktop\School21\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips
+Oct 09 22:32:48.493 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Home\Desktop\School21\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips\6421da7e-430f-4d25-a0ce-8e9c6d04dbba 
+Oct 09 22:32:48.494 GENERAL: working_dir=C:\Users\Home\Desktop\School21\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips\6421da7e-430f-4d25-a0ce-8e9c6d04dbba
+Oct 09 22:32:48.495 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Oct 09 22:32:48.497 VM: VM R1 created.
+Oct 09 22:32:48.498 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Oct 09 22:32:48.499 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Oct 09 22:32:48.500 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Oct 09 22:32:48.500 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Oct 09 22:32:48.502 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Home/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Oct 09 22:32:48.503 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c401.231c.0000 
+Oct 09 22:32:48.503 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Oct 09 22:32:48.504 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Oct 09 22:32:49.213 HYPERVISOR: exec_cmd: nio create_udp udp-9a1d8339-9ac9-4ab7-a118-c67ee33a7d6e 10002 127.0.0.1 10003 
+Oct 09 22:32:49.605 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-9a1d8339-9ac9-4ab7-a118-c67ee33a7d6e 
+Oct 09 22:32:49.605 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 09 22:36:55.676 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Oct 09 22:36:55.677 VM: VM Ghost created.
+Oct 09 22:36:55.678 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Home/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Oct 09 22:36:55.678 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 09 22:36:55.678 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Home\Desktop\School21\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Oct 09 22:36:55.679 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Oct 09 22:36:55.679 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 09 22:36:55.680 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Oct 09 22:36:55.680 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 09 22:36:56.088 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 09 22:36:56.089 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 09 22:36:56.156 VM: VM Ghost shutdown.
+Oct 09 22:36:56.157 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Oct 09 22:36:56.158 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 09 22:36:56.158 VM: VM Ghost destroyed.
+Oct 09 22:36:56.162 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 09 22:36:56.162 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Home\Desktop\School21\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Oct 09 22:36:56.163 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 09 22:36:56.168 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Oct 09 22:36:56.169 HYPERVISOR: exec_cmd: vm start R1 
+Oct 09 22:36:57.674 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 09 22:36:57.674 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Home\Desktop\School21\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Oct 09 22:36:57.675 HYPERVISOR: exec_cmd: vm get_status R1 

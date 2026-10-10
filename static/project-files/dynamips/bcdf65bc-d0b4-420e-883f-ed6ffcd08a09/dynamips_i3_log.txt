@@ -1,0 +1,51 @@
+Jun 04 17:15:39.082 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 04 17:15:39.083 HYPERVISOR: Started on IP = localhost, TCP port = 61907.
+Jun 04 17:15:39.219 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 04 17:15:39.219 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Home\Desktop\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips 
+Jun 04 17:15:39.223 GENERAL: working_dir=C:\Users\Home\Desktop\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips
+Jun 04 17:15:39.224 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Home\Desktop\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips\6421da7e-430f-4d25-a0ce-8e9c6d04dbba 
+Jun 04 17:15:39.224 GENERAL: working_dir=C:\Users\Home\Desktop\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips\6421da7e-430f-4d25-a0ce-8e9c6d04dbba
+Jun 04 17:15:39.224 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Jun 04 17:15:39.225 VM: VM R1 created.
+Jun 04 17:15:39.226 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Jun 04 17:15:39.226 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Jun 04 17:15:39.227 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jun 04 17:15:39.228 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Jun 04 17:15:39.228 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Home/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 04 17:15:39.229 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c401.231c.0000 
+Jun 04 17:15:39.230 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Jun 04 17:15:39.230 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Jun 04 17:15:40.493 HYPERVISOR: exec_cmd: nio create_udp udp-aa088837-ddc5-4466-85a3-b6142da6b2de 10002 127.0.0.1 10003 
+Jun 04 17:15:40.793 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-aa088837-ddc5-4466-85a3-b6142da6b2de 
+Jun 04 17:15:40.794 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 04 17:15:45.417 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jun 04 17:15:45.418 VM: VM Ghost created.
+Jun 04 17:15:45.419 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Home/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 04 17:15:45.419 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 04 17:15:45.421 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Home\Desktop\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 04 17:15:45.421 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jun 04 17:15:45.422 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 04 17:15:45.422 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 04 17:15:45.422 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 04 17:15:45.807 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 04 17:15:45.808 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 04 17:15:45.880 VM: VM Ghost shutdown.
+Jun 04 17:15:45.881 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jun 04 17:15:45.883 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 04 17:15:45.883 VM: VM Ghost destroyed.
+Jun 04 17:15:45.889 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Jun 04 17:15:45.889 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Home\Desktop\CBS_2\CbS2_Networking_basics_Part_2.ID_1521089-1\src\1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 04 17:15:45.890 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 04 17:15:45.899 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Jun 04 17:15:45.901 HYPERVISOR: exec_cmd: vm start R1 
+Jun 04 17:17:35.990 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 04 17:17:35.990 HYPERVISOR: exec_cmd: vm stop R1 
+Jun 04 17:17:36.131 VM: VM R1 shutdown.
+Jun 04 17:17:36.133 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jun 04 17:17:36.678 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 04 17:17:36.678 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jun 04 17:17:36.693 HYPERVISOR: exec_cmd: vm delete R1 
+Jun 04 17:17:36.693 VM: VM R1 destroyed.
+Jun 04 17:17:36.695 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 04 17:17:37.171 HYPERVISOR: Stopped.
+Jun 04 17:17:37.172 GENERAL: reset done.
